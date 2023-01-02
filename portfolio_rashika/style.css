@@ -101,6 +101,9 @@
     color: white;
     text-align: center;
     font-family: 'Baloo Bhai', cursive;
+    animation-name:change ;
+    animation-duration: 3s;
+    animation-delay: 3s;
 
 }
 
@@ -109,7 +112,30 @@
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
+    animation-name: hide;
+    animation-duration: 3s;
+   
 
+}
+#home img{
+    width: 200px;
+    height: 500px;
+   margin-left:auto ;
+}
+@keyframes change {
+    from{color:white;}
+    to{color: black;}
+
+    from{font-size: 50px;}
+    to{font-size: 80px;}
+    
+}
+@keyframes hide {
+   from{display: block;}
+    to{
+       display: none;
+    }
+    
 }
 
 /*Services Section*/
@@ -141,7 +167,15 @@
     display: block;
     height: 100px;
     margin: auto;
+    box-shadow: 2px 2px 2px 2px blue;
 
+}
+#services img:hover{
+    scale: 1.2;
+    border-radius: 50%;
+    border: 2px solid black;
+   
+   
 }
 
 #services .box p {
@@ -152,6 +186,8 @@
 #client-section {
     height: 344px;
     margin-top: 20px;
+    margin-bottom: 30px;
+    
 
 }
 
@@ -160,7 +196,7 @@
     position: absolute;
     background: url(edu.jpg) no-repeat center center/cover;
     width: 100%;
-    height: 40%;
+    height: 48%;
     z-index: -1;
     opacity: 0.4;
 }
@@ -170,6 +206,8 @@
 /*Contact Section*/
 #contact {
     position: relative;
+    margin-top: 10px;
+    
 }
 
 #contact::before {
@@ -229,12 +267,6 @@
     /* padding: 1.5px; */
     font-family: 'Bree Serif', serif;
 }
-
-
-
-
-
-
 .center {
     text-align: center;
 }
